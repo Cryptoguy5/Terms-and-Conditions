@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 35%;
+            width: 65%;
+            background-color: white;
+        }
+
+        form {
+            height: 100%;
+            width: 100%;
+        }
+
+        fieldset {
+            height: 30%;
+            width: 90%;
+            margin: 1%;
+        }
+
+        legend {
+            font-weight: bolder;
+            font-size: 24px;
+        }
+
+        input[type="checkbox"]{
+             accent-color: blue;
+             box-shadow: 0 0 4px 1px gray inset;
+        }
+
+        p {
+            margin-left: 2%;
+        }
+
+        span {
+            color: red;
+        }
+
+        .span2 {
+             text-decoration-line: underline;
+             text-decoration-color: teal;
+             color: teal;
+        }
+
+        button {
+            height: 50%;
+            background: linear-gradient(90deg, lightgrey, rgb(222, 220, 220));
+            border: 2px solid gray;
+            border-radius: 2px;
+        }
+
+        @media(max-width: 680px) {
+            .main {
+                width: 100%;
+            }
+        }
+
+       
+
+
+    </style>
+</head>
+<body class="flex">
+    <div class="main flex">
+        <form class="flex" style="flex-direction: column-reverse;">
+            <fieldset style="display: flex; align-items: center;">
+                <button>Register</button>
+            </fieldset>
+            <fieldset style="display: flex; align-items: center;">
+                <legend>Terms and Conditions</legend>
+                <label>Terms and Conditions<span>*</span></label>
+                <input type="checkbox">
+                <p>I have read and agree to the <span class="span2">terms and conditions</span>.</p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
